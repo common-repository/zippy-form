@@ -1,0 +1,627 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ #regForm .radio{
+	display: inline-block;
+}
+
+
+#regForm .input-group-text {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0.375rem 0.375rem;
+}
+#regForm .choices__inner .choices{
+  margin-bottom: 6px !important;
+  position: relative;
+}
+h1 {
+  text-align: center;  
+}
+#regForm p label{
+	font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#regForm label{
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  display: block !important;
+  text-align: left;
+}
+#regForm p {
+	margin: auto;
+}
+#regForm input[type='email'],#regForm textarea,#regForm input[type='tel'],#regForm input[type='number'],#regForm input[type='time'], #regForm input[type='url'],#regForm input[type='date'],#regForm input[type='file']{
+  padding: 5px !important;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px !important;
+    background: transparent;
+  
+}
+#regForm select{
+  padding: 5px !important;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px !important;
+   
+  
+}
+#regForm input[type='text'], #regForm input[type='tel']{
+	border: none !important;
+  padding: 5px !important;
+  margin: 0px !important;
+  background: transparent;
+}
+#regForm  select#choices-multiple-remove-button{
+	border:unset !important;
+}
+#regForm input.choices__input.choices__input--cloned {
+    border: none !important;
+    width: 100% !important;
+	background: unset !important;
+  cursor: pointer;
+
+}
+#regForm .choices__inner{
+  /* height: 38px !important; */
+  background: unset !important;
+  padding: unset !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 6px !important;
+  min-height: 36px;
+  cursor:pointer;
+}
+#regForm input[type="radio"]{
+	width:unset !important;
+}
+.radio-options label{
+	margin-right: 30px ;
+	
+}
+/* progress bar */
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width:85%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.stepContainer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ max-width: 100%;
+  width:100%;
+  /* padding: 0 0; */
+  margin-bottom: 40px;
+
+}
+#regForm input[type=search]:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.progress-container::before {
+  content: ""; /* Mandatory with ::before */
+  background-color: #E6E5FF;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  
+}
+
+.progress-steps {
+  background-color: #635BFF;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+.step {
+  background-color: #E6E5FF;
+  color: #635BFF;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  border: 3px solid #fff;
+  transition: 0.4s ease;
+  z-index: 1;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.step.active {
+  border-color: #fff;
+    background: #635BFF;
+    color: #fff;
+}
+#regForm .input-group{
+	border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+/* Mark input boxes that gets an error on validation: */
+#regForm .input-group.invalid,#regForm .choices__inner.invalid {
+  border:1px solid #f30404 !important;
+}
+#regForm .error-message{
+	font-size: 16px;
+	color: #f30404;
+	margin-bottom: 10px;
+  margin-top:-10px;
+}
+#regForm span.require-text {
+    font-size: 14px;
+    color: red;
+}
+
+
+button {
+
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* button:hover {
+  opacity: 0.8;
+} */
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step.finish {
+	background-color: #635BFF;
+    color: #fff;
+}
+#regForm #nextBtn {
+  border-radius: 6px;
+  background: #635BFF;
+  color: #fff;
+  padding: 5px 35px;
+  border:none
+}
+#regForm #nextBtn:hover {
+  background: #0A2540;
+}
+ #regForm #prevBtn {
+  border-radius: 6px;
+  background: #0A2540;
+  color: #fff;
+  padding: 5px 35px;
+  border:none
+}
+#regForm #prevBtn:hover {
+  background: #6C7C8C;
+}
+/* #regForm textarea:focus, #regForm input:focus{
+    outline: none;
+	box-shadow: unset !important;
+} */
+#regForm .choices__list--multiple .choices__item{
+    padding:unset;
+        margin-top: 5px;
+        padding-left: 5px;
+        border: 1px solid #DFE6ED !important;
+    background: #DFE6ED !important;
+        line-height: 24px;
+        color:#000;
+    }
+    #regForm .choices[data-type*=select-multiple] .choices__button{
+      border-left: none  !important;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAigAAAIoBlCJR2wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACiSURBVDiNldJBDsIwDATAEZ9AKlTi/2/oiQ8Agh6AIvEOOMDFVXNog1kphzjejbVr6HBAI48mOB1c8ME1KdJE7wdn2OIehRs2FfIaffQ+sRsfMiKL5IzIT3JNJE0e0WIwGTsaNsRbCuUk1Z9XCwJvvIr7K2oplDk/4qT3ZM6w0pPqntTc/imSiWpR5J+cZ0VOJsMyObcmY4+wjwnSSxK9PfZfMKFTqvF3Wg0AAAAASUVORK5CYII=) !important;
+    }
+    #regForm  .choices[data-type*=select-multiple]{
+  
+    border-left: 1px solid #fff !important;
+    }
+    #regForm .choices[data-type*=select-multiple] .choices__button{
+      line-height: 0px !important;
+    }
+ 
+  #regForm select {
+      height: 40px;
+      border-radius: 0px;
+      max-width: 100%;
+  }
+  #regForm input[type='date']:before {
+    position: absolute;
+    top: 5px; left: 3px;
+    content: attr(data-date);
+    display: inline-block;
+    color: black;
+}
+
+#regForm input[type='date']::-webkit-datetime-edit, #regForm input[type='date']::-webkit-inner-spin-button,#regForm input[type='date']::-webkit-clear-button {
+    display: none;
+}
+
+#regForm input[type='date']::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: black;
+    opacity: 1;
+}
+#regForm input[type='date']{
+  position: relative;
+  height: 35px;
+  color: white;
+}
+#regForm .step:after {
+  width: 150px;
+    display: block;
+    transform: translate(-55px, 3px);;
+    color: #575757;
+    content: attr(data-desc);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 12px;
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+#regForm .step.finish:after {
+  color: #575757;
+}
+#regForm .step.active:after {
+  color: #635BFF;
+}
+.zippy-file-upload {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.zippy-file-upload.is-active {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.file-input{
+  display:grid;
+  word-break: break-word;
+}
+.fake-btn {
+  text-align: center;
+}
+
+.file-msg {
+  font-size: small;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.zippy-file-upload input[type='file'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.zippy-file-upload input[type='file']:focus {
+  outline: none;
+}
+
+#regForm .disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+#regForm .flatpickr-input[readonly] {
+  cursor: pointer;
+  height: 40px ;
+}
+
+#regForm .form-control[readonly] {
+  background-color: unset !important;
+}
+#regForm .radio-options p{
+  font-size: 16px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+#regForm .radio-options label{
+  display: inline-block !important;
+ 
+}
+
+.radioButtons [type="radio"]:checked,
+.radioButtons [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radioButtons [type="radio"]:checked + label,
+.radioButtons [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+  
+}
+.radioButtons [type="radio"]:checked + label:before,
+.radioButtons [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    margin-top:5px
+}
+.radioButtons [type="radio"]:checked + label:before {
+  border: 1px solid #635BFF !important;
+}
+
+.radioButtons [type="radio"]:checked + label:after,
+.radioButtons [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #635BFF;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-top:5px
+}
+.radioButtons [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radioButtons [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.radioButtons label {
+  word-wrap: break-word;
+  margin-left:0px !important;
+}
+.stepName {
+  width:130px;
+  display: block;
+  color: #818698;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 0 5px;
+}
+.radioButtons {
+  margin-bottom: 10px;
+}
+#field_form {
+  margin: 8% 0;
+}
+
+#regForm input[type=checkbox] + label {
+  display: inline-block !important;
+  cursor: pointer;
+      padding-right: 28px;
+    padding-top: 5px;
+}
+
+#regForm input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+
+#regForm input[type=checkbox] + label:before {
+  content: "";
+  border: 0.1em solid #ddd;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: transparent;
+  border-radius: 3px;
+   font-size: 16px;
+}
+#regForm input[type=checkbox]:checked  + label:before {
+  content: "✓";
+  border: 0.1em solid #635BFF;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  color: transparent;
+  font-size: 16px;
+    line-height: 9px;
+    padding: 4px 2px;
+}
+
+#regForm input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+#regForm input[type=checkbox]:checked + label:before {
+  background-color: #635BFF;
+  border-color: #635BFF;
+  color: #fff;
+}
+
+#regForm input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+#regForm input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+.zippyCheckBoxes {
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+#regForm .form-select {
+  background-position: right 0.1rem center !important;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .progress-container {
+    flex-direction: column;
+    row-gap: 30px;
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .progress-container::before {
+    top:unset;
+    height: unset;
+    height:100%;
+    width:unset;
+    width: 4px;
+    margin-left: 18px;
+    transform: unset;
+  }
+  .progress-steps{
+    top:unset;
+    transform: unset;
+    height: unset;
+    height: 0%;
+    width:unset;
+    width: 4px;
+    margin-left: 18px;
+  }
+  #regForm .step:after{
+    font-size: 14px;
+    transform: translate(20px, -35px);
+  }
+  #regForm .tab {
+    border-top: 1px solid #DFE6ED;
+    padding-top: 10px;
+}
+}
+#regForm .tab {
+  border-top: none;
+  padding-top: 10px;
+}
+.form-select.active{
+  background-image: unset;
+  background: url('../img/up-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 22px;
+}
+#regForm .input-group input:focus{
+  box-shadow: none !important; /* Add a box shadow when focused */
+  outline:none !important;
+
+}
+#regForm .input-group:focus-within,#regForm .choices:focus-within,#regForm .zippy-file-upload:focus-within,#regForm .zippy-file-upload:focus-visible, #regForm .input-group textarea:focus,#regForm .input-group select:focus{
+  /* Your styling rules for focused input go here */
+  /* border-color: #4CAF50 !important; Change the border color when focused */
+  box-shadow: 0 0 0px #635BFF; /* Add a box shadow when focused */
+  outline:1px solid  #635BFF;
+  border-radius: 6px;
+  border:none;
+}
+
+#regForm .choices__list--dropdown .choices__list, #regForm .choices__list[aria-expanded] .choices__list {
+  max-height: 200px !important;
+  margin: 10px 10px 10px 0px;
+}
+#regForm .choices__list[aria-expanded]{
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+}
+#regForm .choices__list--dropdown .choices__item, #regForm .choices__list[aria-expanded] .choices__item{
+  padding: 7px 10px;
+}
+#regForm .choices[data-type*=select-multiple]::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  right: 11px;
+  top: 41%;
+  height: 6px;
+  width: 6px;
+  border-style: solid;
+  border-color: #605E5C;
+  border-width: 0px 2px 2px 0px;
+  -webkit-transform: rotate(45deg) !important;
+  transform: rotate(45deg) !important;
+}
+#regForm .choices[data-type*=select-multiple].is-open::after {
+  top: 45%;
+    border-width: 2px 0px 0px 2px !important;
+    transform: rotate(45deg) !important;
+}
+#regForm .choices__list--dropdown, #regForm .choices__list[aria-expanded] {
+  margin-top: 5px !important;
+  border-radius: 10px !important;
+ 
+}
+#regForm .is-flipped .choices__list--dropdown, #regForm .is-flipped .choices__list[aria-expanded]{
+  margin-bottom: 5px !important;
+  
+}
+#regForm .choices__list[aria-expanded] .choices__list::-webkit-scrollbar {
+  width: 3px;
+  margin-right: 10px;
+  border-radius: 30px;
+
+}
+#regForm .choices__list[aria-expanded] .choices__list::-webkit-scrollbar-thumb {
+  border: 3px solid #8B8B8B;
+ 
+}
+#regForm .choices__list[aria-expanded] .choices__list::-webkit-scrollbar-track {
+  background: #DEDEDE;
+  border-radius: 30px;
+}
+#regForm .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background: unset !important;
+}
+#regForm .choices{
+  margin-bottom: 15px;
+}
+#regForm button:focus {
+  outline: none;
+}
+.choices__input{
+  font-size: 16px;
+  padding: 4px 0 4px 10px;
+}
